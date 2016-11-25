@@ -10,11 +10,11 @@
       <h1>SIIKLI SUPER MEGA SHOPPING LIST</h1>
       <p>Welcome to your new shopping list</p>
       <div id="list">
+      </div>
         <div class="item">
           <input type="checkbox">
           <input type="text" value="Product name" id="newProduct">
         </div>
-      </div>
     </div>
   </body>
 <script>
@@ -22,8 +22,17 @@
           .addEventListener("keyup", function(event) {
             event.preventDefault();
             if (event.keyCode == 13) {
+              var newCheckbox = document.createElement("input");
+              newCheckbox.setAttribute("type", "checkbox");
+              var newTextInput = document.createElement("input");
+              newTextInput.setAttribute("type", "text");
+              newTextInput.setAttribute("value", document.getElementById("newProduct").value);
+              var newItem = document.createElement("div");
+              newItem.setAttribute("class", "item");
+              newItem.appendChild(newCheckbox);
+              newItem.appendChild(newTextInput);
               console.log(document.getElementById("newProduct").value);
-              $("#list").prepend("<p>lol</p>");
+              $("#list").append(newItem);
             }
           });
 </script>
