@@ -16,6 +16,7 @@
           <input type="text" value="Product name" id="newProduct">
         </div>
     </div>
+  <button onclick="printAllToConsole()">print to console</button>
   </body>
 <script>
   document.getElementById("newProduct")
@@ -35,5 +36,15 @@
               $("#list").append(newItem);
             }
           });
+  function printAllToConsole() {
+    var my_array = new Array();
+    $('div#parent div.childOne span').each(function(){
+
+      my_array[''+$(this).attr('id')+''] = $(this).text();
+
+      my_array.push($(this).text());
+
+    });
+  }
 </script>
 </html>
