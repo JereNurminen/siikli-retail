@@ -3,9 +3,31 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/public/javascripts/ListFunctions.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="content">
+      <h1><%= title %></h1>
+      <p>Welcome to your new shopping list</p>
+      <div id="list">
+        <div class="item">
+          <input type="checkbox">
+          <input type="text" value="Product name" id="newProduct">
+        </div>
+
+      </div>
+    </div>
   </body>
+<script>
+  document.getElementById("newProduct")
+          .addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode == 13) {
+              console.log(document.getElementById("newProduct").value);
+              document.getElementById("list").innerHTML.concat()
+                ;
+
+            }
+          });
+</script>
 </html>
