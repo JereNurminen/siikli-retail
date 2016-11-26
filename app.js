@@ -1,15 +1,25 @@
+//noinspection JSUnresolvedFunction
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var fd = require('fs');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var listFunctions = require('./routes/listFunctions');
 
 var app = express();
+
+var mongoUri = 'mongodb://localhost/noderest';
+mongoose.connect(mongoUri);
+var db = mongoose.connection;
+db.on('error', function () {
+  throw new Error('unable to connect to database at ' + mongoUri);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
