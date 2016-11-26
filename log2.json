@@ -1,0 +1,330 @@
+  {
+    "status": 200,
+    "message": {
+      "entry": {
+        "ean": 3228881004611,
+        "name": "Yellow Label Tea 50 bags",
+        "type": "PT",
+        "subname": "Lipton",
+        "brand": "Lipton",
+        "commentable" : "true",
+        "pt_category_id": 2539,
+        "quantity": 0.1,
+        "unit_name": "KG",
+        "source": "SOK",
+        "popularity": 0.500000683479509,
+        "has_details": true,
+        "details_supplier": "Unilever Finland Oy, Foods",
+        "details_name": "Lipton 50ps Yellow Label Tea",
+        "origin": "BE",
+        "ingredients": "Black tea",
+        "kj": 5,
+        "kcal": 43,
+        "protein": 0.31,
+        "carbohydrate": 8.0,
+        "sugar": 8.0,
+        "fat": 0.0737,
+        "fat_saturated": 0.0185,
+        "fiber": 3.9,
+        "sodium": 0.0,
+        "vitamin_a_mcg": 1.64,
+        "vitamin_d_mcg": 0.0,
+        "vitamin_c_mg": 6.0,
+        "vitamin_e_mg": 0.06,
+        "images": 1,
+        "description": "Quality Tea.",
+        "sales_unit_name": "KOT",
+        "updated_at": "2012-05-07T22:04:03+03:00",
+        "aisle": "JUOMAT",
+        "aisle_number": 14,
+        "product_class": "package",
+        "num_likes": 338,
+        "contains_alcohol": true,
+        "stock_level": 3.0,
+        "drop_shipping": {
+          "range_min": 1,
+          "range_max": 3,
+          "range_unit": "days"
+        },
+        "entrytags": [
+          {
+            "kind": "brand",
+            "name": "Lipton"
+          },{
+            "kind": "brand",
+            "name": "Lipton"
+          }
+        ],
+        "manufacturer": {
+          "name": "Unilever"
+        },
+        "favourite": true,
+        "foodie_meter": 70.0,
+        "user_preferences": {
+          "fish": 1,
+          "egg": 0
+        },
+        "entry_ad": {
+          "id": 53813,
+          "starts_at": "2010-11-02 00:00:00 +0200",
+          "ends_at": "2010-12-31 00:00:00 +0200",
+          "price": 1.95,
+          "comp_price": 19.5,
+          "comp_unit": "KG",
+          "store": {
+            "chain_name": "Prisma",
+            "name": "Prisma Laune",
+            "address": "Sample street 10, 15610 Lahti",
+            "lat": "60.96119",
+            "lon": "25.65831",
+            "guid": "6390786be602ae434a36464ae9d57bd0",
+            "prices": true
+          }
+        },
+        "entry_labels": [
+          {
+            "name": "Good from Finland",
+            "image_name": "GOOD.png"
+          }, {
+            "name": "Sample label",
+            "image_name": "SAMPLE.png"
+          }
+        ],
+        "enumbers": {
+          "E450": "Di-Sodium Phosphate",
+          "E500": "Sodium Carbonate"
+        },
+        "entry_attributes": [
+          {
+            "attribute": {
+              "id": 2,
+              "name": "Package size",
+              "editor_note": "This is just an example."
+              "options":[
+                {
+                  "id": 7,
+                  "name": "Small",
+                  "order": 1
+                }, {
+                  "id": 8,
+                  "name": "Normal",
+                  "order": 2
+                }, {
+                  "id": 9,
+                  "name": "Big",
+                  "order": 3
+                }
+              ]
+            },
+            "id": 2,
+            "order": 0,
+            "count": 1,
+            "label": "Product package size"
+          }
+        ],
+        "has_variants": true,
+        "choosable_variants": true,
+        "product_attributes": [
+          {
+            "name": "Size",
+            "value": "S"
+          }, {
+            "name": "Color",
+            "value": "Red"
+          }
+        ],
+        "availability_details": "Available on Thursdays between 12.33-13.09",
+        "notes_description": "Also available in handy one hectoliter package.",
+        "feed_items": "DEPRACATED",
+        "price": 2.25,
+        "comp_price": 22.5,
+        "unit_of_measure": "KOT",
+        "package_size": 0.1,
+        "comp_unit": "KG",
+        "scale_product": false,
+        "currency": "€",
+        "has_recipes": true,
+        "name_35": "Yellow Label Tee 50 Ps",
+        "long_name": "Yellow Label Tee 50 Pussia",
+        "brand_name": "Lipton",
+        "gross_weight": 100.5,
+        "net_weight": 80,
+        "gross_weight_unit": "GR",
+        "net_weight_unit": "GR",
+        "height": 150,
+        "width": 80,
+        "depth": 75,
+        "height_unit": "MM",
+        "width_unit": "MM",
+        "depth_unit": "MM",
+        "net_content_value": 0.08,
+        "net_content_unit": "KG",
+        "nutrient_ref_value": 100,
+        "nutrient_ref_unit": "G",
+        "convenience_level": "100",
+        "good_after_opening_days": 31,
+        "temperature_storage_max": 30,
+        "temperature_storage_min": -30,
+        "temperature_tolerance_max": 100,
+        "temperature_tolerance_min": -55,
+        "flash_point_c": 500,
+        "temperature_unit": "CE",
+        "ph_value": 5.0,
+        "alcohol_percentage": 0.5,
+        "manufacturer_gln": "6430054999991",
+        "entry_h_phrase_additional_info": "Extremely dangerous tea",
+        "entry_p_phrase_additional_info": "Be careful in the vicinity of hot water",
+        "entry_packaging_type": {
+          "gdsn_code": "SRW",
+          "name": "Shrinkwrap"
+        },
+        "entry_packaging_recycling": {
+          "gdsn_code": "EYU",
+          "name": "Energy efficient"
+        },
+        "entry_h_phrase": {
+          "gdsn_code": "H240",
+          "name": "Danger of explosion if heated"
+          },
+        "entry_p_phrase": {
+          "gdsn_code": "P412",
+          "name": "Do not expose to temperatures over 50°C/122°F."
+        },
+        "entry_gpc_category": {
+          "ext_id": "10005717",
+          "name": "Tea"
+        },
+        "entry_gpc_attributes": [
+          {
+            "ext_id": "30009198",
+            "name": "Mount type",
+            "value": "Disconnected"
+          }, {
+            "ext_id": "30004369",
+            "name": "Power source",
+            "value": "Tree"
+          }
+        ],
+        "entry_additives": [
+          {
+            "gdsn_code": "CPT",
+            "name": "Contains Phosphate"
+          }, {
+            "gdsn_code": "ZWA",
+            "name": "Added water"
+          }
+        ],
+        "entry_ingredient_features": [
+          {
+            "gdsn_code": "AOI",
+            "name": "Ingredients of animal origin"
+          }, {
+            "gdsn_code": "GLT",
+            "name": "Contains gelatin"
+          }
+        ],
+        "entry_nutritional_properties": [
+          {
+            "gdsn_code": "FOL",
+            "name": "Contains folic acid"
+          }, {
+            "gdsn_code": "IB6",
+            "name": "Added Vitamin-B6"
+          }, {
+            "gdsn_code": "USW",
+            "name": "Unsweetened"
+          }
+        ],
+        "entry_feature_benefits": [
+          {
+            "gdsn_code": "NO_ZEOLITE",
+            "name": "No zeolite"
+          }, {
+            "gdsn_code": "ANTIBACTERIC",
+            "name": "Anti-bacterial"
+          }
+        ],
+        "entry_s_phrases": [
+          {
+            "gdsn_code": "S15",
+            "name": "Keep safe from heat"
+          }, {
+            "gdsn_code": "S2",
+            "name": "Not for kids."
+          }
+        ],
+        "entry_allergens": [
+          {
+            "gdsn_code": "AM",
+            "name": "Dairy products",
+            "containment_level": "FREE_FROM"
+          }, {
+            "gdsn_code": "UM",
+            "name": "Mollusc product",
+            "containment_level": "MAY_CONTAIN"
+          }, {
+            "gdsn_code": "AE",
+            "name": "Eggs and egg products",
+            "containment_level": "CONTAINS"
+          }
+        ],
+        "entry_characteristics": [
+          {
+            "gdsn_code": "CHC",
+            "name": "Amount of Cocoa",
+            "percentage": 0.5
+          }, {
+            "gdsn_code": "DNR",
+            "name": "Dilution Ratio",
+            "percentage": 75
+          }
+        ],
+        "entry_nutrients": [
+          {
+            "gdsn_code": "FAT",
+            "name": "Fat",
+            "amount_g": 10,
+            "amount_precision": "EXACT"
+          }, {
+            "gdsn_code": "FIBTG",
+            "name": "Fiber",
+            "amount_g": 2,
+            "amount_precision": "APPROXIMATELY"
+          }
+        ],
+        "entry_vitamins": [
+          {
+            "gdsn_code": "VITK",
+            "name": "Vitamin-K",
+            "amount": 0.001,
+            "amount_unit": "G"
+          }, {
+            "gdsn_code": "CU",
+            "name": "Copper",
+            "amount": 1000,
+            "amount_unit": "G"
+          }
+        ],
+        "entry_hazard_symbols": [
+          {
+            "gdsn_code": "T+",
+            "name": "Extremely poisonous",
+            "image_name": "T+.PNG"
+          }, {
+            "gdsn_code": "F",
+            "name": "Flammable",
+            "image_name": "F.PNG"
+          }
+        ],
+        "entry_warning_pictograms": [
+          {
+            "gdsn_code": "FLAME",
+            "name": "Flame",
+            "image_name": "FLAME.PNG"
+          }
+        ]
+      }
+    },
+    "num_results": 1,
+    "trId": "12345678"
+  }
