@@ -11,19 +11,19 @@ var fs = require('fs');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var listFunctions = require('./routes/listFunctions');
-//var shoppingLists = require('./routes/shoppingLists');
+var shoppingLists = require('./routes/shoppingLists');
 
 
 var app = express();
 
-/*var mongoUri = 'mongodb://localhost/noderest';
+var mongoUri = 'mongodb://localhost/noderest';
 mongoose.connect(mongoUri);
 var db = mongoose.connection;
 db.on('error', function () {
   throw new Error('unable to connect to database at ' + mongoUri);
 });
 
-require('./models/shoppingList');*/
+require('./models/shoppingList');
 
 
 // view engine setup
@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/listFunctions', listFunctions);
-//app.use('/shoppingLists', shoppingLists);
+app.use('/shoppingLists', shoppingLists);
 
 
 // catch 404 and forward to error handler
