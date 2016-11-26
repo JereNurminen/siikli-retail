@@ -7,11 +7,3 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-
-function addItem (event) {
-  if (event.which == 13 || event.keyCode == 13) {
-    //code to execute here
-    return false;
-  }
-  return true;
-}
