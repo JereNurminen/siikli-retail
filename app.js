@@ -6,7 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var fd = require('fs');
+var fs = require('fs');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -14,12 +14,12 @@ var listFunctions = require('./routes/listFunctions');
 
 var app = express();
 
-var mongoUri = 'mongodb://localhost/noderest';
+/*var mongoUri = 'mongodb://localhost/noderest';
 mongoose.connect(mongoUri);
 var db = mongoose.connection;
 db.on('error', function () {
   throw new Error('unable to connect to database at ' + mongoUri);
-});
+});*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,7 +29,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
