@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px; font-family: 'Bungee Inline', cursive;
 }
 
 h1 {
@@ -18,7 +18,8 @@ a {
 #content {
     width: 75%;
     border-style: solid;
-    border-color: black;
+    background-color: #91ff9f;
+    border-color: #91ff9f;
     padding: 5pt;
     margin-left: auto;
     margin-right: auto;
@@ -34,4 +35,17 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+}
+
+.productLine, #newProduct {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background-color: #91ff9f;
+    border-width: 1pt;
+    border-bottom: solid;
+}
+
+#newProduct {
+
 }
