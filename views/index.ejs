@@ -18,12 +18,14 @@
         </div>
     </div>
   <button onclick="printAllToConsole()">print to console</button>
+  <button onclick="saveShoppingList()">save list</button>
   </body>
 <script>
   var shoppingList = {
     'owner':'Pekka',
     'list':[]
   };
+  var http = require('http');
 
   document.getElementById("newProduct")
           .addEventListener("keyup", function(event) {
@@ -46,6 +48,8 @@
           });
 
   function printAllToConsole() {
+    http.request()
+    
     var stuff = document.getElementById("list")
     //console.log(stuff.getElementsByTagName("div")[0].getElementsByTagName("input")[0].checked);
     for (var i = 0; i < stuff.childElementCount; i++) {
@@ -55,6 +59,21 @@
       console.log(productName + ", is checked: " + isChecked);
       }
       console.log(shoppingList);
+      console.log(JSON.stringify(shoppingList));
+    return shoppingList;
+
+  }
+
+  function saveShoppingList() {
+    var txtFile = "/tmp/test.txt";
+    var file = new File([""],"write");
+    var str = JSON.stringify(printAllToConsole());
+
+    console.log("opening file...");
+    file.open();
+    console.log("writing file..");
+    file.writeline(str);
+    file.close();
   }
 </script>
 </html>
