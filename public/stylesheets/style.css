@@ -25,6 +25,11 @@ a {
 background-image: http://aijaa.com/K7QFjr;
 position: top:0; right:0;
 }*/
+
+.item {
+    border-width: 200px;
+}
+
 img {
   float: left;
   width: 55px;
