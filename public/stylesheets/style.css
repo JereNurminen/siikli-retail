@@ -15,11 +15,26 @@ a {
   color: #00B7FF;
 }
 
+/*#scannerbutton {
+background-image: http://aijaa.com/K7QFjr;
+position: top:0; right:0;
+}*/
+
+img {
+    width: 50px;
+}
+
+button {
+    background-color: #91ff9f;
+    border-color: #91ff9f;
+}
+
 #content {
     width: 75%;
     border-style: solid;
     background-color: #91ff9f;
     border-color: #91ff9f;
+    border-radius: 2%;
     padding: 5pt;
     margin-left: auto;
     margin-right: auto;
@@ -38,12 +53,13 @@ a {
 }
 
 .productLine, #newProduct {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     background-color: #91ff9f;
-    border-width: 1pt;
-    border-bottom: solid;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    /*border-bottom: solid;*/
 }
 
 #newProduct {
