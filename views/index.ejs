@@ -13,12 +13,17 @@
       </div>
         <div class="item">
           <input type="checkbox">
-          <input type="text" value="Product name" id="newProduct">
+          <input type="text" placeholder="Product name" id="newProduct">
         </div>
     </div>
   <button onclick="printAllToConsole()">print to console</button>
   </body>
 <script>
+  var shoppingList = {
+    'owner':'Pekka',
+    'list':[]
+  };
+
   document.getElementById("newProduct")
           .addEventListener("keyup", function(event) {
             event.preventDefault();
@@ -33,18 +38,21 @@
               newItem.appendChild(newCheckbox);
               newItem.appendChild(newTextInput);
               console.log(document.getElementById("newProduct").value);
+              document.getElementById("newProduct").value = "";
               $("#list").append(newItem);
             }
           });
+
   function printAllToConsole() {
-    var my_array = new Array();
-    $('div#parent div.childOne span').each(function(){
-
-      my_array[''+$(this).attr('id')+''] = $(this).text();
-
-      my_array.push($(this).text());
-
-    });
+    var stuff = document.getElementById("list")
+    //console.log(stuff.getElementsByTagName("div")[0].getElementsByTagName("input")[0].checked);
+    for (var i = 0; i < stuff.childElementCount; i++) {
+      var productName = stuff.getElementsByTagName("div")[i].getElementsByTagName("input")[1].value;
+      var isChecked = stuff.getElementsByTagName("div")[i].getElementsByTagName("input")[0].checked;
+      shoppingList.list[i] = {productName:productName,isChecked:isChecked};
+      console.log(productName + ", is checked: " + isChecked);
+      }
+      console.log(shoppingList);
   }
 </script>
 </html>
