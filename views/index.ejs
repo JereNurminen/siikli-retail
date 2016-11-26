@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
   <head>
     <title>Siikli Super Mega Shopping List</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -8,32 +8,31 @@
   </head>
   <body>
     <div id="content">
-      <h1>SIIKLI SUPER MEGA SHOPPING LIST</h1>
+      <h1><%= title %></h1>
       <p>Welcome to your new shopping list</p>
-      <!--<form method="post" action="/listFunctions" id="listForm">-->
-        <div id="list">
+      <div id="list">
+      </div>
+        <div class="item">
+          <input type="checkbox">
+          <input type="text" placeholder="Product name" id="newProduct">
         </div>
-          <div class="item">
-            <input type="checkbox">
-            <input type="text" placeholder="Product name" id="newProduct">
-          </div>
         <button onclick="printAllToConsole()">print to console</button>
         <button onclick="saveShoppingList()">save list</button>
+        <a href="/listFunctions">PLOP</a>
         <!--<input type="submit">Save list</input>-->
       <!--</form>-->
     </div>
+  <button onclick="printAllToConsole()">print to console</button>
+  <button onclick="saveShoppingList()">save list</button>
   </body>
 <script>
-
   var shoppingList = {
     'owner':'Pekka',
     'list':[]
   };
-
   document.getElementById("newProduct")
           .addEventListener("keyup", function(event) {
             event.preventDefault();
-            var nextItemIndex = 0;
             if (event.keyCode == 13) {
               var newCheckbox = document.createElement("input");
               newCheckbox.setAttribute("type", "checkbox");
@@ -41,8 +40,6 @@
               newTextInput.setAttribute("type", "text");
               newTextInput.setAttribute("value", document.getElementById("newProduct").value);
               newTextInput.setAttribute("class", "productLine");
-              newTextInput.setAttribute("name", nextItemIndex.toString());
-              nextItemIndex++;
               var newItem = document.createElement("div");
               newItem.setAttribute("class", "item");
               newItem.appendChild(newCheckbox);
@@ -54,6 +51,7 @@
           });
 
   function printAllToConsole() {
+    
     var stuff = document.getElementById("list")
     //console.log(stuff.getElementsByTagName("div")[0].getElementsByTagName("input")[0].checked);
     for (var i = 0; i < stuff.childElementCount; i++) {
@@ -67,20 +65,5 @@
     return shoppingList;
 
   }
-
-  function saveShoppingList() {
-    var str = JSON.stringify(printAllToConsole());
-    console.log(str);
-  }
-
-/*    function checkEnter(e){
-      e = e || event;
-      var txtArea = /textarea/i.test((e.target || e.srcElement).tagName);
-      return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
-    }
-
-    document.querySelector('form').onkeypress = checkEnter;
-
-  }*/
 </script>
 </html>
